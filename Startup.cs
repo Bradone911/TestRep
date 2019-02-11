@@ -38,7 +38,8 @@ namespace TestRepo.NewDb
             var connection = "Data Source=blogging.db";
             services.AddDbContext<BloggingContext>
                 (options => options.UseSqlite(connection));
-
+                // the above the the db string
+                
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
